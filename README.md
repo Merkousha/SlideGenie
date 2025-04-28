@@ -1,6 +1,14 @@
-# Slider - Educational Slide Generator
+# SlideGenie - AI-Powered Educational Slide Generator
 
-This project is designed to generate educational slides using OpenAI API and convert Mermaid diagrams to images.
+SlideGenie is an intelligent educational slide generator that leverages the power of OpenAI API to create engaging presentations and converts Mermaid diagrams into visual assets.
+
+## Features
+
+- AI-powered slide content generation
+- Automatic Mermaid diagram to image conversion
+- Customizable slide templates
+- Multi-language support
+- Educational content optimization
 
 ## Prerequisites
 
@@ -61,7 +69,7 @@ python -m src.main
 ## Project Structure
 
 ```
-Slider/
+SlideGenie/
 │
 ├── src/                     # Source code directory
 │   ├── api/                # API related modules
@@ -98,97 +106,19 @@ The language of the generated slides can be configured in `src/config/settings.p
 
 ```python
 # Slides Language
-SLIDES_LANGUAGE = "English"  # Change to "Persian" for Persian slides
-```
-
-This setting determines the language of all generated content, including:
-- Slide titles
-- Slide content
-- Code examples
-- Key points
-- Presenter notes
-
-### Setting Chapter Name
-
-The chapter name can be set in two places:
-
-1. In `run.py` (recommended for production use):
-```python
-if __name__ == "__main__":
-    chapter_name = "Chapter1"  # Change this to your desired chapter name
-    generate_chapter_slides(chapter_name)
-```
-
-2. In `src/main.py` (for development/testing):
-```python
-if __name__ == "__main__":
-    chapter_name = "Flowchart and Sequence Diagrams"  # Change this to your desired chapter name
-    generate_chapter_slides(chapter_name)
-```
-
-The chapter name is used to:
-- Create a folder in the output directory
-- Name the generated PowerPoint file
-- Organize topic files
-
-## Mermaid Diagrams
-
-To use Mermaid diagrams in slides, place the Mermaid code in the `mermaid_text` field. Example:
-
-```json
-{
-  "slides": [
-    {
-      "title": "Flow Diagram",
-      "content": "Diagram description",
-      "code_examples": "",
-      "key_points": "Key points",
-      "presenter_notes": "Presenter notes",
-      "mermaid_text": "graph TD\n    A[Start] --> B{Condition}\n    B -->|Yes| C[Operation 1]\n    B -->|No| D[Operation 2]"
-    }
-  ]
-}
+LANGUAGE = "en"  # Change to your desired language code
 ```
 
 ## Contributing
 
-We welcome contributions to this project! Here's how you can contribute:
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-1. Fork the repository
-2. Create a new branch for your feature or bugfix
-3. Make your changes
-4. Submit a Pull Request (PR)
+## License
 
-### Pull Request Process
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-1. Ensure your PR includes a clear description of the changes
-2. Make sure all tests pass
-3. Update documentation if necessary
-4. Your PR will be reviewed by maintainers
-5. Once approved, your changes will be merged into the main branch
+## Acknowledgments
 
-We review all PRs and will get back to you as soon as possible. Thank you for your contributions!
-
-## Troubleshooting
-
-### Mermaid CLI Not Found
-
-If you encounter the error "mermaid-cli (mmdc) not found":
-
-1. Make sure you have installed mermaid-cli
-2. Check the mermaid-cli installation path:
-
-```bash
-which mmdc  # on Linux/Mac
-where mmdc  # on Windows
-```
-
-3. If the path is not found, you can add the full path in the `mermaid_generator.py` file.
-
-### OpenAI API Access Issues
-
-If you encounter OpenAI API access errors:
-
-1. Make sure your API key is valid
-2. Check if the API key is properly set in the `config.py` file
-3. If you're using a VPN, make sure you have access to OpenAI servers. 
+- OpenAI for providing the API
+- Mermaid.js team for the diagram generation tool
+- All contributors who help improve SlideGenie 
