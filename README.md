@@ -109,6 +109,10 @@ The language of the generated slides can be configured in `src/config/settings.p
 LANGUAGE = "en"  # Change to your desired language code
 ```
 
+## Logging Configuration
+
+Logging is configured in `src/utils/logger.py`. The logger is set up to log messages to both the console and a file named `slidegenie.log`. The logging level is set to `DEBUG` to capture detailed information about the program's execution.
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
