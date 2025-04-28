@@ -1,0 +1,8 @@
+# you need to install mermaid-cli
+# npm install -g @mermaid-js/mermaid-cli
+requests==2.31.0
+python-pptx>=0.6.21
+openai>=1.0.0
+Pillow==10.2.0
+pathlib>=1.0.1
+python-dotenv>=1.0.0

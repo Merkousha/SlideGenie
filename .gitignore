@@ -1,0 +1,14 @@
+.env
+*/__pycache__/
+*/*/__pycache__/
+*/*/*/__pycache__/
+# Environments
+.venv
+.venv2
+env/
+venv/
+venv2/
+ENV/
+
+
+.env
