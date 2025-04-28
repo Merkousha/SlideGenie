@@ -1,5 +1,7 @@
 # SlideGenie - AI-Powered Educational Slide Generator
 
+[![CI](https://github.com/Merkousha/SlideGenie/actions/workflows/python-app.yml/badge.svg)](https://github.com/Merkousha/SlideGenie/actions)
+
 SlideGenie is an intelligent educational slide generator that leverages the power of OpenAI API to create engaging presentations and converts Mermaid diagrams into visual assets.
 
 ## Features
